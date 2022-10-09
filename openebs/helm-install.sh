@@ -6,4 +6,4 @@ helm install openebs-jiva openebs-jiva/jiva --namespace openebs --create-namespa
 	--set-string storageClass.isDefaultClass=true \
 	--set-string defaultPolicy.name=openebs-jiva-policy \
 	--set-string defaultPolicy.replicas=3
-kubectl apply -f ./jiva-pvc.yaml --namespace openebs
+kubectl apply -f ./jiva-pvc.yaml
