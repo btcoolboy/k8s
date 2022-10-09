@@ -28,10 +28,9 @@ spec:
     - k8s-worker04.cloud.lab
   controlPlaneEndpoint:
     ## Internal loadbalancer for apiservers 
-    internalLoadbalancer: haproxy
-
+    internalLoadbalancer: ipvs
     domain: k8s.cloud.lab
-    address: ""
+    address: "10.200.101.200"
     port: 6443
   kubernetes:
     version: v1.23.8
@@ -47,11 +46,3 @@ spec:
     ## multus support. https://github.com/k8snetworkplumbingwg/multus-cni
     multusCNI:
       enabled: false
-  registry:
-    privateRegistry: ""
-    namespaceOverride: ""
-    registryMirrors: []
-    insecureRegistries: []
-  addons: []
-
-
