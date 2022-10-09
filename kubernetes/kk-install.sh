@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Installing KubeKey..."
 curl -sfL https://get-kk.kubesphere.io | sh -
 sudo mv kk /usr/bin/
