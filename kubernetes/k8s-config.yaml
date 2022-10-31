@@ -11,6 +11,8 @@ spec:
   - {name: k8s-worker02.cloud.lab, address: 10.200.101.195, internalAddress: 10.200.101.195, user: ubuntu}
   - {name: k8s-worker03.cloud.lab, address: 10.200.101.196, internalAddress: 10.200.101.196, user: ubuntu}
   - {name: k8s-worker04.cloud.lab, address: 10.200.101.197, internalAddress: 10.200.101.197, user: ubuntu}
+  - {name: k8s-worker05.cloud.lab, address: 10.200.101.198, internalAddress: 10.200.101.198, user: ubuntu}
+  - {name: k8s-worker06.cloud.lab, address: 10.200.101.199, internalAddress: 10.200.101.199, user: ubuntu}
   roleGroups:
     etcd:
     - k8s-master01.cloud.lab
@@ -25,6 +27,8 @@ spec:
     - k8s-worker02.cloud.lab
     - k8s-worker03.cloud.lab
     - k8s-worker04.cloud.lab
+    - k8s-worker05.cloud.lab
+    - k8s-worker06.cloud.lab
   controlPlaneEndpoint:
     ## Internal loadbalancer for apiservers 
     internalLoadbalancer: haproxy
