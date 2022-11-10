@@ -1,7 +1,8 @@
 #!/bin/bash
 echo "Installing KubeKey..."
 curl -sfL https://get-kk.kubesphere.io | sh -
-sudo mv kk /usr/bin/
+sudo mv kk /usr/local/bin/
+sudo chmod +x /usr/local/bin/kk
 rm -rf kubekey-*.tar.gz
 echo "Installing helm..."
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
