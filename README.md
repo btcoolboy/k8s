@@ -1,4 +1,6 @@
-`ubuntu``kubernetes``containerd`
+`ubuntu`
+`kubernetes`
+`containerd`
 - ingress-nginx
 - metallb
 - openebs
