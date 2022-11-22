@@ -2,8 +2,8 @@
 helm repo add openebs-jiva https://openebs.github.io/jiva-operator
 helm repo update
 helm install openebs-jiva openebs-jiva/jiva --namespace openebs --create-namespace \
-	--set-string storageClass.name=openebs-jiva-csi \
-	--set-string storageClass.isDefaultClass=true \
-	--set-string defaultPolicy.name=openebs-jiva-policy \
-	--set-string defaultPolicy.replicas=3
-kubectl apply -f ./jiva-pvc.yaml
+	--set storageClass.name=openebs-jiva-csi \
+	--set storageClass.isDefaultClass=true \
+	--set defaultPolicy.name=openebs-jiva-policy \
+	--set defaultPolicy.replicas=3
+kubectl apply -f ./jiva-csi-pvc.yaml
