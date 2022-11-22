@@ -4,6 +4,6 @@ helm repo update
 helm install nfs-client nfs-subdir-external-provisioner/nfs-subdir-external-provisioner --namespace kube-system \
     --set nfs.server=10.200.101.190 \
     --set nfs.path=/nfs-data \
-    --set storageClass.onDelete=true \
+    --set storageClass.onDelete=delete \
     --set replicaCount=2
 kubectl apply -f ./nfs-client-pvc.yaml
