@@ -48,8 +48,7 @@ jivaOperator:
   resyncInterval: "30"
   podAnnotations: {}
   podLabels: {}
-  nodeSelector:
-    node-role.kubernetes.io/control-plane: ""
+  nodeSelector: {}
   tolerations:
     - operator: Exists
   resources: {}
