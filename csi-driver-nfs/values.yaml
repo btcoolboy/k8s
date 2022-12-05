@@ -37,9 +37,9 @@ kubeletDir: /var/lib/kubelet
 
 controller:
   name: csi-nfs-controller
-  replicas: 1
+  replicas: 2
   runOnMaster: false
-  runOnControlPlane: false
+  runOnControlPlane: true
   livenessProbe:
     healthPort: 29652
   logLevel: 5

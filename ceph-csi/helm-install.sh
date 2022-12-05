@@ -3,11 +3,7 @@
 # csi
 helm repo add ceph-csi https://ceph.github.io/csi-charts
 helm repo update
-helm install ceph-csi-rbd ceph-csi/ceph-csi-rbd --namespace ceph-csi --create-namespace \
-	--set nodeplugin.tolerations[0].operator=Exists \
-        --set provisioner.replicaCount=2 \
-        --set provisioner.nodeSelector.'node-role\.kubernetes\.io/control-plane'= \
-        --set provisioner.tolerations[0].operator=Exists
+helm install ceph-csi-rbd ceph-csi/ceph-csi-rbd --namespace ceph-csi --create-namespace -f ./values.yaml
 
 # ConfigMap
 kubectl apply -f ./csi-config-map.yaml
