@@ -226,8 +226,10 @@ controller:
     # limits:
       # cpu: 100m
       # memory: 100Mi
-  nodeSelector: {}
-  tolerations: []
+  nodeSelector:
+    node-role.kubernetes.io/control-plane: ""
+  tolerations:
+    - operator: Exists
   priorityClassName: ""
   runtimeClassName: ""
   affinity: {}

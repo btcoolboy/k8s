@@ -243,7 +243,7 @@ provisioner:
     resources: {}
 
   nodeSelector:
-    node-role.kubernetes.io/control-plane:
+    node-role.kubernetes.io/control-plane: ""
 
   tolerations:
     - operator: Exists

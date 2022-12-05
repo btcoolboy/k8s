@@ -49,7 +49,7 @@ jivaOperator:
   podAnnotations: {}
   podLabels: {}
   nodeSelector:
-    node-role.kubernetes.io/control-plane:
+    node-role.kubernetes.io/control-plane: ""
   tolerations:
     - operator: Exists
   resources: {}
@@ -107,7 +107,7 @@ csiController:
   podAnnotations: {}
   podLabels: {}
   nodeSelector:
-    node-role.kubernetes.io/control-plane:          
+    node-role.kubernetes.io/control-plane: "" 
   tolerations:
     - operator: Exists
   resources: {}
@@ -230,6 +230,6 @@ localpv-provisioner:
     enabled: false
   localpv:
     nodeSelector:
-      node-role.kubernetes.io/control-plane:
+      node-role.kubernetes.io/control-plane: ""
     tolerations:
       - operator: Exists
