@@ -9,8 +9,6 @@ csiNode:
     - operator: Exists
 
 jivaOperator:
-  nodeSelector:
-    node-role.kubernetes.io/control-plane: ""
   tolerations:
     - operator: Exists
 
