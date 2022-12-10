@@ -1,5 +1,5 @@
 #!/bin/bash
-kubectl=`find ./kubekey/kube/ -name kubectl`
+kubectl=`find ./kubekey/kube/ -name kubectl | tail -1`
 sudo cp $kubectl /usr/local/bin/kubectl
 sudo chmod +x /usr/local/bin/kubectl
 mkdir -p ~/.kube
